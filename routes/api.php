@@ -23,3 +23,5 @@ use App\Http\Controllers\ConnectorController;
 Route::get('/connectors', [ConnectorController::class, 'index']);
 Route::post('/connectors', [ConnectorController::class, 'store']);
 
+//multidbconnect 
+Route::post('/connect', [App\Http\Controllers\CDCController::class, 'connect']);

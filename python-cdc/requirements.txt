@@ -1,0 +1,15 @@
+# --- Web Framework ---
+flask==3.0.3
+flask-cors==4.0.0
+
+# --- Database Drivers ---
+psycopg2-binary==2.9.9         # PostgreSQL connector
+mysql-connector-python==9.0.0  # MySQL connector
+
+# --- Data Processing ---
+pandas==2.2.2
+sqlalchemy==2.0.32
+
+# --- Utility Libraries ---
+python-dotenv==1.0.1
+requests==2.32.3
