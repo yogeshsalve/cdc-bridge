@@ -150,7 +150,7 @@
         }
     }
 
-   //✅ Fetch live CDC or show last inserted record
+    // ✅ Fetch live CDC or show last inserted record
     async function fetchLiveCDCData() {
         try {
             const response = await axios.get("/api/connectors");
@@ -190,9 +190,6 @@
         }
     }
 
-
-
-
     // 🕒 Load full history
     async function loadHistory() {
         try {
@@ -224,8 +221,8 @@
     }
 
     // Start polling every 10 seconds
-    // fetchLiveCDCData();
-    // pollingInterval = setInterval(fetchLiveCDCData, 10000);
+    fetchLiveCDCData();
+    pollingInterval = setInterval(fetchLiveCDCData, 10000);
     </script>
 </body>
 </html>
